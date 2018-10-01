@@ -1,0 +1,3 @@
+[submodule "kivyMenus"]
+	path = kivyMenus
+	url = https://github.com/sarthaksachdeva/kivyMenus.git
