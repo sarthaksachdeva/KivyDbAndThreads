@@ -1,4 +1,4 @@
-from kivyDemos.kivyHomeMenuGit.DataBaseUtility.AuthenticationUtility import Authentication
+from AuthenticationUtility import Authentication
 import datetime
 
 

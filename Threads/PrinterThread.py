@@ -1,8 +1,8 @@
 import threading
-import pandas as pd
-from kivyDemos.kivyHomeMenuGit.Threads.printerUtility import PrinterUtility
+#import pandas as pd
+from printerUtility import PrinterUtility
 
-from kivyDemos.kivyHomeMenuGit.DataBaseUtility.dataBaseType import dataBaseType
+from dataBaseType import dataBaseType
 from tabulate import tabulate
 
 class PrinterThread(threading.Thread):
@@ -44,11 +44,12 @@ class PrinterThread(threading.Thread):
         for val in data[0]:
             columnArr.append(str(val))
 
-        df = pd.DataFrame(list(data), columns=columnArr)
-        printerUtility = PrinterUtility()
-        printerUtility.formatDataFrame(df)
-        printerUtility.printTable(tabulate(df, showindex=False, headers=df.columns))
-        print(tabulate(df, showindex=False, headers=df.columns))
+        #df = pd.DataFrame(list(data), columns=columnArr)
+        #printerUtility = PrinterUtility()
+        #printerUtility.formatDataFrame(df)
+        #printerUtility.printTable(tabulate(df, showindex=False, headers=df.columns))
+        #print(tabulate(df, showindex=False, headers=df.columns))
+        print(data)
 
     def run(self):
         print("Printer Thread started")

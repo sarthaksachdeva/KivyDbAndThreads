@@ -5,7 +5,7 @@ from kivy.uix.button import Button
 from kivy.uix.boxlayout import BoxLayout
 from kivy.properties import ObjectProperty
 from kivy.core.window import Window
-from kivyDemos.kivyHomeMenuGit.kivyMenus.focusWidgets import FocusWithColor
+from focusWidgets import FocusWithColor
 from functools import partial
 from kivy.utils import get_color_from_hex
 
